@@ -1,0 +1,69 @@
+#include "stdio.h"
+int main()
+{
+int tomate, batata, cebola, op, opcartao, valorcompra, troco,valorentra;
+
+
+tomate =10;
+batata =20;
+cebola =5;
+
+valorcompra = (batata*2)+(tomate*2);
+troco=valorentra-valorcompra;
+
+
+printf("Forma de pagamento: \n");
+printf("1- Cartao\n");
+printf("2- Dinheiro\n");
+printf("3- PIX\n");
+
+scanf("%d", &op);
+
+if(op==1)
+{
+    printf("1-Debito\n");
+    printf("2-Credito\n");
+    scanf("%d",&opcartao);
+    if(opcartao==1)
+    {
+        printf("Valor da compra: R$%d\n",valorcompra);
+        printf("Aguardando pagamento...\n");
+        printf("Pagamento realizado!!!");
+    }
+    if(opcartao==2)
+    {
+        printf("Valor da compra: R$%d\n",valorcompra);
+        printf("Aguardando pagamento...\n");
+        printf("Pagamento realizado!!!");
+    }
+
+
+}
+if(op==2)
+{
+        printf("Valor da compra: R$%d\n",valorcompra);
+        printf("Valor recebido do cliente :\n");
+        scanf ("%d",&valorentra);
+        troco=valorentra-valorcompra;
+
+        printf("Troco: R$%d ", troco);
+
+}
+if(op == 3)
+{
+    printf("Valor da compra: %d\n", valorcompra);
+    printf("Aguardando pagamento via PIX...\n");
+    printf("------ QR Code ------\n");
+    printf("| ##  ##   ## ## ## |\n");
+    printf("| ##      ##        |\n");
+    printf("| ##  ##  ## ##  ## |\n");
+    printf("|                   |\n");
+    printf("|   ##   ##   ## ## |\n");
+    printf("| ## ##      ##     |\n");
+    printf("|   ##  ##   ##  ## |\n");
+    printf("----------------------\n");
+    printf("Pagamento realizado com sucesso!\n");
+}
+return 0;
+
+}
