@@ -3,8 +3,8 @@ int main()
 {
 int tomate, batata, cebola, op, opcartao, valorcompra, troco,valorentra;
 
-
-tomate =10;
+// Estes valores são genéricos, apenas para testar as opções de pagamento
+tomate =10; 
 batata =20;
 cebola =5;
 
