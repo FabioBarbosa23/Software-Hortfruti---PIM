@@ -1,7 +1,7 @@
 #include "stdio.h"
 int main()
 {
-int tomate, batata, cebola, op, opcartao, valorcompra, troco,valorentra;
+int tomate, batata, cebola, op, opcartao, valorcompra, troco,valorentra,valordia;
 
 // Estes valores são genéricos, apenas para testar as opções de pagamento
 tomate =10; 
@@ -16,6 +16,7 @@ printf("Forma de pagamento: \n");
 printf("1- Cartao\n");
 printf("2- Dinheiro\n");
 printf("3- PIX\n");
+printf("4- Saldo do dia\n");
 
 scanf("%d", &op);
 
@@ -63,6 +64,12 @@ if(op == 3)
     printf("|   ##  ##   ##  ## |\n");
     printf("----------------------\n");
     printf("Pagamento realizado com sucesso!\n");
+}
+valordia=0
+if(op == 4)
+{
+   valordia=valordia+valorcompra;
+    printf("O valor arrecadado no dia foi: %d", valordia);
 }
 return 0;
 
